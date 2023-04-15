@@ -1170,7 +1170,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 } // with Bondtech extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } // with stock extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 140 } // with stock extruder
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
