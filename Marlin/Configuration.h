@@ -736,7 +736,7 @@
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  * @section bed temp
  */
-//#define PIDTEMPBED // CR-10 S5 config
+#define PIDTEMPBED // CR-10 S5 config
 
 //#define BED_LIMIT_SWITCHING
 
@@ -1485,7 +1485,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -51, -12, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -54, -21, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
