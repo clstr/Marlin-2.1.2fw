@@ -2720,11 +2720,7 @@
   #define INTERPOLATE      true
 
   #if AXIS_IS_TMC_CONFIG(X)
-<<<<<<< HEAD
     #define X_CURRENT       750        // (mA) RMS current. Multiply by 1.414 for peak current.
-=======
-    #define X_CURRENT       650        // (mA) RMS current. Multiply by 1.414 for peak current.
->>>>>>> 7001f1e37f1e3fe8b97cecb0e83c9c90b9d60c9b
     #define X_CURRENT_HOME  X_CURRENT  // (mA) RMS current for sensorless homing
     #define X_MICROSTEPS     16        // 0..256
     #define X_RSENSE          0.11     // Multiplied x1000 for TMC26X
@@ -2744,11 +2740,7 @@
   #endif
 
   #if AXIS_IS_TMC_CONFIG(Y)
-<<<<<<< HEAD
     #define Y_CURRENT       1125
-=======
-    #define Y_CURRENT       950
->>>>>>> 7001f1e37f1e3fe8b97cecb0e83c9c90b9d60c9b
     #define Y_CURRENT_HOME  Y_CURRENT
     #define Y_MICROSTEPS     16
     #define Y_RSENSE          0.11
@@ -2768,11 +2760,7 @@
   #endif
 
   #if AXIS_IS_TMC_CONFIG(Z)
-<<<<<<< HEAD
     #define Z_CURRENT       725
-=======
-    #define Z_CURRENT       505
->>>>>>> 7001f1e37f1e3fe8b97cecb0e83c9c90b9d60c9b
     #define Z_CURRENT_HOME  Z_CURRENT
     #define Z_MICROSTEPS     16
     #define Z_RSENSE          0.11
@@ -2872,11 +2860,7 @@
   #endif
 
   #if AXIS_IS_TMC_CONFIG(E0)
-<<<<<<< HEAD
     #define E0_CURRENT      750
-=======
-    #define E0_CURRENT      650
->>>>>>> 7001f1e37f1e3fe8b97cecb0e83c9c90b9d60c9b
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
