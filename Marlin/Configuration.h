@@ -1169,8 +1169,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 } // with Bondtech extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.4, 81.55, 408.6, 138 } // with BTT Extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.4, 81.55, 408.6, 677.1 } // Orbiter 2.0 Extruder
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1190,7 +1189,7 @@
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 3000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -1875,8 +1874,8 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-#define AUTO_BED_LEVELING_BILINEAR
-//#define AUTO_BED_LEVELING_UBL
+//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
 /**
@@ -1955,7 +1954,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 7
+  #define GRID_MAX_POINTS_X 8
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
