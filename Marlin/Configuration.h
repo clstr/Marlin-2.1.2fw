@@ -746,16 +746,16 @@
  * When set to any value below 255, enables a form of PWM to the bed that acts like a divider
  * so don't use it unless you are OK with PWM on your bed. (See the comment on enabling PIDTEMPBED)
  */
-#define MAX_BED_POWER 255 // limits duty cycle to bed; 255=full current
+#define MAX_BED_POWER 165 // 65% bed power to prevent warping
 
 #if ENABLED(PIDTEMPBED)
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-  // CR-10 Megnetic Bed (Stock Heater)
-  #define DEFAULT_bedKp 181.6924
-  #define DEFAULT_bedKi 34.9408
-  #define DEFAULT_bedKd 629.8671
+  // CR-10 Megnetic Bed (AC Heater)
+  #define DEFAULT_bedKp 39.3885
+  #define DEFAULT_bedKi 7.5747
+  #define DEFAULT_bedKd 136.5470
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
